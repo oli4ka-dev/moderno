@@ -22,11 +22,12 @@ li {
 }
 
 body {
-    font-family: 'Roboto-Regular', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     color: $text;
+    overflow-x: hidden;
 }
 
 //прижать footer к низу 
@@ -55,9 +56,10 @@ body {
 }
 
 //   footer 
-.page-content{
+.page-content {
     background-color: $grey;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -114,6 +116,7 @@ body {
             }
 
             &:last-child {
+
                 a,
                 span {
                     color: $bg;
@@ -124,5 +127,19 @@ body {
         a {
             color: #b0bec5;
         }
+    }
+}
+
+.angel-right {
+    position: relative;
+    padding-left: 15px;
+
+    &::before {
+        content: "\f105";
+        font-family: 'icomoon';
+        position: absolute;
+        left: 0;
+        color: $green;
+        font-size: 14px;
     }
 }
